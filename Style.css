@@ -1,0 +1,530 @@
+/*barra di navigazione*/
+body{
+	background-color: black;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	padding-right: 30px;
+	padding-left: 90px;
+}
+
+/*linea*/
+hr{
+	width: 877%;
+	height: 1px;
+	background-color: white;
+	display: flex;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*background-color: black;*/
+}
+
+li, a, button {
+	font-family: helvetica, san-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: grey;
+	text-decoration: none;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 3%;
+	position: fixed;
+	z-index: 12;
+	width: 100%;
+}
+
+.top-nav{
+	list-style: none;
+}
+
+.top-nav li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.top-nav li a {
+	transition: all 0.3s ease 0s;
+}
+
+.top-nav li a:hover {
+	color: white;
+}
+
+button {
+	margin-left: 20px;
+	padding: 9px 25px;
+	background-color: grey;
+	color: white;
+	border: none;
+	border-radius: 0px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: white;
+	color: black;
+}
+
+/*intestazione iniziale*/
+h1{
+	/*color: white;*/
+	font-family: "Helvetica";
+	font-size: 180px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 10px;
+}
+
+.p1{
+	color: white;
+}
+
+.p2{
+stroke-width: 2px;
+stroke-color: white;
+}
+
+.Griglia-contenitore {
+background-color: black;
+padding: 30px;
+/*padding-right: 0px;
+padding-left: 0px;*/
+/*STABILIRE CHE ESISTE UNA GRIGLIA*/
+display: grid;
+/*NUMERO E LARGHEZZA DELLE COLONNE*/
+grid-template-columns: repeat(8, 1fr);
+/*NUMERO E ALTEZZA DELLE RIGHE*/
+grid-template-rows: (10, 1fr);
+/*justify-content: center;*/
+/*align-items: center;*/
+grid-column-gap: 20px;
+grid-row-gap: 30px;
+}
+
+.Griglia-cella{
+	padding: 15px;
+	/*outline: 1px solid white;*/
+}
+
+.Cella1{
+	background-color: black;
+	/*padding: 10px;*/
+	grid-column: 5/9;
+	color: white;
+	text-align: left;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+h2{
+	font-family: "Helvetica";
+/*	font-size: 150px;*/	
+	padding-top: 70px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: 10px;
+}
+
+.Cella2{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+/*	color: white;*/	
+	text-align: center;
+	padding-right: 100px;
+	padding-left: 0px;
+	font-family: helvetica, san-serif;
+	font-size: 50px;
+	stroke-width: 1px;
+	stroke-color: white;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.p3{
+	color: white;
+}
+
+.p4{
+stroke-width: 1px;
+stroke-color: white;
+}
+
+.p5{
+	padding-left: 300px;
+	color: white;
+}
+
+.Cella3{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/5;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella4{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella5{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/5;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella6{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella7{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+/*	color: white;*/	
+	text-align: center;
+	padding-right: 100px;
+	padding-left: 0px;
+	font-family: helvetica, san-serif;
+	font-size: 50px;
+	stroke-width: 1px;
+	stroke-color: white;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.p6{
+	color: white;
+}
+
+.p7{
+stroke-width: 1px;
+stroke-color: white;
+}
+
+.Cella8{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella9{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+/*testo microfono costruzione*/
+.Cella10{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+	padding-bottom: 30PX;
+}
+
+/*titoletto speaker costruzione*/
+.Cella11{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+	position: right;
+}
+
+.Cella12{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+	position: right;
+}
+
+.Cella13{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella14{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+/*	color: white;*/	
+	text-align: center;
+	padding-right: 100px;
+	padding-left: 0px;
+	font-family: helvetica, san-serif;
+	font-size: 50px;
+	stroke-width: 1px;
+	stroke-color: white;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.p8{
+	color: white;
+	padding-right: 300px;
+}
+
+.p9{
+	color: white;
+	padding-left: 400px;
+}
+
+.p10{
+	stroke-width: 1px;
+	stroke-color: white;
+	padding-left: 480px;
+}
+
+.Cella15{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella16{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+	position: right;
+}
+
+.Cella17{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/8;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+	position: right;
+}
+
+.Cella18{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+	position: right;
+}
+
+.Cella19{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/9;
+/*	color: white;*/	
+	text-align: center;
+	padding-right: 100px;
+	padding-left: 0px;
+	font-family: helvetica, san-serif;
+	font-size: 50px;
+	stroke-width: 1px;
+	stroke-color: white;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.p11{
+	color: white;
+	padding-right: 300px;
+}
+
+.p12{
+	stroke-width: 1px;
+	stroke-color: white;
+	padding-left: 480px;
+}
+
+.Cella20{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/5;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.Cella21{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+			display: flex;
+
+}
+
+.Cella22{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/5;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+		display: flex;
+
+}
+
+.Cella23{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+		display: flex;
+
+}
+
+.hr2{
+	width: 877%;
+	height: 1px;
+	background-color: white;
+	display: flex;
+	margin-top: 50px;
+}
+
+.footer1{
+	background-color: black;
+	padding: 0px;
+	grid-column: 1/3;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.footer2{
+	background-color: black;
+	padding: 0px;
+	grid-column: 3/5;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.footer3{
+	background-color: black;
+	padding: 0px;
+	grid-column: 5/7;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+.footer4{
+	background-color: black;
+	padding: 0px;
+	grid-column: 7/9;
+	color: white;	
+	text-align: left;
+	font-family: helvetica, san-serif;
+	font-size: 20px;
+}
+
+/*footer {
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 40px;
+padding-bottom: 50px;
+background-color: none;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 40px;
+}*/
+/* testo per le fonti */
+
+
+/*a {
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-size: 10px;
+color: white;
+text-decoration: underline;
+}*/
+
+/*.p13{
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-size: 10px;
+color: white;
+text-decoration: underline;	
+}
+*/
